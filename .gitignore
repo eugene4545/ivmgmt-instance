@@ -1,0 +1,50 @@
+# Node modules in both client and server directories
+/client/node_modules
+/server/node_modules
+
+# PnP (Plug'n'Play) & Yarn (if you're using Yarn)
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Testing output (coverage) - if used in client or server
+/client/coverage
+/server/coverage
+
+# Build and output directories for client and server
+/client/.next/
+/client/out/
+/client/build
+/server/.next/
+/server/out/
+/server/build
+
+# Miscellaneous files - system files and logs
+.DS_Store
+*.pem
+*.log
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files (do not track .env files)
+.env*
+.env*.local
+
+# Vercel deployment files (if using Vercel)
+.vercel
+
+# TypeScript build info (if using TypeScript in either client or server)
+*.tsbuildinfo
+next-env.d.ts
+
+# Specific client and server build files
+/client/dist
+/server/dist
+
+# Dump files (database dumps)
+/server/inventorymangement.dump
+
+
