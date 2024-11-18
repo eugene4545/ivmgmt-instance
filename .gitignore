@@ -1,6 +1,7 @@
 # Node modules in both client and server directories
 /client/node_modules
 /server/node_modules
+node_modules
 
 # PnP (Plug'n'Play) & Yarn (if you're using Yarn)
 /.pnp
