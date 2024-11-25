@@ -13,7 +13,6 @@
 
 //   const isDarkMode = useAppSelector((state) => state.global.isDarkMode);
 
-
 //   const toggleSidebar = () => {
 //     dispatch(setIsSidebarCollapsed(!isSidebarCollapsed));
 //   };
@@ -32,7 +31,7 @@
 //         >
 //           <Menu className="w-4 h-4" />
 //         </button>
-      
+
 //       <div className="relative">
 //         <input
 //           type="search"
@@ -57,8 +56,8 @@
 //              ): (
 //               <Sun className="cursor-pointer text-gray-500" size={24} />
 //              )}
-//             </button>  
-//             </div> 
+//             </button>
+//             </div>
 //             <div className="relative">
 //                 <Bell className="cursor-pointer text-gray-500" size={24} />
 //                 <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none text-red-100 bg-red-400 rounded-full">
@@ -88,7 +87,7 @@ import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
-import profile from '@/app/akum.jpg'
+import profile from "@/app/akum.jpg";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -117,7 +116,7 @@ const Navbar = () => {
         >
           <Menu className="w-4 h-4" />
         </button>
-        
+
         <div className="relative">
           <input
             type="search"
@@ -133,7 +132,7 @@ const Navbar = () => {
       {/* RIGHT SIDE */}
       <div className="flex justify-between items-center gap-5">
         {/* Dark Mode Toggle Button  (mr-3) */}
-        <button onClick={toggleDarkMode} className="ml-2">             
+        <button onClick={toggleDarkMode} className="ml-2">
           {isDarkMode ? (
             <Moon className="cursor-pointer text-gray-500" size={24} />
           ) : (
@@ -141,22 +140,23 @@ const Navbar = () => {
           )}
         </button>
         <div className="relative hidden md:block">
-                <Bell className="cursor-pointer text-gray-500" size={24} />
-                 <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none text-red-100 bg-red-400 rounded-full">
-                     3
-                 </span>
-             </div>
-             <hr className="w-0 h-7 border border-solid border-1 border-gray-300 mx-3 hidden md:block"/>
-             <div className="flex items-center gap-3 cursor-pointer hidden md:flex">
-              <Image
-                src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/akum.jpg"
-                alt="Profile"
-                width={50}
-                height={50}
-                className="rounded-full h-full object-cover"
-                />
-               <span className="font-semibold">Akum</span>
-            </div>
+          <Bell className="cursor-pointer text-gray-500" size={24} />
+          <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none text-red-100 bg-red-400 rounded-full">
+            3
+          </span>
+        </div>
+        <hr className="w-0 h-7 border border-solid border-1 border-gray-300 mx-3 hidden md:block" />
+        <div className="flex items-center gap-3 cursor-pointer hidden md:flex">
+          <Image
+            src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/akum.jpg"
+            alt="Profile"
+            width={50}
+            height={50}
+            className="rounded-full object-cover w-12 h-12"
+          />
+
+          <span className="font-semibold">Akum</span>
+        </div>
         {/* Settings Button */}
         <Link href="/settings">
           <Settings className="cursor-pointer text-gray-500" size={24} />
@@ -167,4 +167,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
