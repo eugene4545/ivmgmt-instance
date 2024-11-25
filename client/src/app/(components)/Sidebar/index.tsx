@@ -75,7 +75,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <Image src={logo} alt="logo" width={40} height={40} />
+        <Image
+              src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/baD0h501.svg"
+              alt="eugie-logo"
+              width={27}
+              height={27}
+              className="rounded w-8"
+              />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"

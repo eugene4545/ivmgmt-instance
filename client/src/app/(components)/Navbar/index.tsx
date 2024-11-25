@@ -88,8 +88,8 @@ import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 import Link from "next/link";
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
-import Image from "next/image"
 import profile from '@/app/akum.jpg'
+import Image from "next/image";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
@@ -148,9 +148,14 @@ const Navbar = () => {
              </div>
              <hr className="w-0 h-7 border border-solid border-1 border-gray-300 mx-3 hidden md:block"/>
              <div className="flex items-center gap-3 cursor-pointer hidden md:flex">
-              <div className="w-9 h-9 rounded-full overflow-hidden">
-              <Image src={profile} alt="logo" width={40} height={40} />
-               </div><span className="font-semibold">Akum</span>
+              <Image
+                src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/profile.jpg"
+                alt="Profile"
+                width={50}
+                height={50}
+                className="rounded-full h-full object-cover"
+                />
+               <span className="font-semibold">Akum</span>
             </div>
         {/* Settings Button */}
         <Link href="/settings">
