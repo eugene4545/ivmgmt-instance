@@ -76,7 +76,7 @@ const Sidebar = () => {
         }`}
       >
         <Image
-              src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/baD0h501.svg"
+              src="https://s3-inventmanagement.s3.us-east-1.amazonaws.com/eugies.svg"
               alt="eugie-logo"
               width={27}
               height={27}
